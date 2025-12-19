@@ -119,5 +119,5 @@ For training the DOD method, you should run `the script_train_dod.py` script. Th
 ### Acknowledgments
 
 <sup>
-This work was partially supported by the grants TKP2021-NVA-09 and K135728 of the National Research, Development and Innovation Fund (NKFIH) of Hungary; the HAS Domus scholarship; the ATLAS project funded by the EU CHIST-ERA program (CHIST-ERA-23-MultiGIS-02) and NKFIH under grant 2024-1.2.2-ERA-NET-2025-00020; the project Romanian Hub for Artificial Intelligence-HRIA, Smart Growth, Digitization and Financial Instruments Program, MySMIS no. 334906. 
+This work was partially supported by the grants TKP2021-NVA-09 and K135728 of the National Research, Development and Innovation Fund (NKFIH) of Hungary; the HAS Domus scholarship; the ATLAS project funded by the EU CHIST-ERA program (CHIST-ERA-23-MultiGIS-02) and NKFIH under grant 2024-1.2.2-ERA-NET-2025-00020; the project Romanian Hub for Artificial Intelligence-HRIA, Smart Growth, Digitization and Financial Instruments Program, MySMIS no. 351416. 
 </sup>
