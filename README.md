@@ -12,10 +12,6 @@ Object detection in remote sensing consists in recognizing and localizing object
 
 This project was published at [MIGARS2025](https://ieeexplore.ieee.org/document/11231783)
 
-## Acknowledgments
-
-This work was partially supported by the grants TKP2021-NVA-09 and K135728 of the National Research, Development and Innovation Fund (NKFIH) of Hungary; the HAS Domus scholarship; the ATLAS project funded by the EU CHIST-ERA program (CHIST-ERA-23-MultiGIS-02) and NKFIH under grant 2024-1.2.2-ERA-NET-2025-00020; the project Romanian Hub for Artificial Intelligence-HRIA, Smart Growth, Digitization and Financial Instruments Program, MySMIS no. 334906. 
-
 ## Datasets
 
 We provide 3 datasets, formatted to be useable out-of-the-box with the DOD model.
@@ -25,25 +21,25 @@ Download with:
 [OHD-SJTU dataset](http://rocon.utcluj.ro/~levente/download/public/dod/ohdsjtu_dod.zip)
 
 <p align="center">
-  <img src="assets/P480_0450_2700.jpg"> <br>
+  <img src="assets/P480_0450_2700.jpg" width="400"> <br>
 </p>
 
 [OHD-SJTU occluded dataset](http://rocon.utcluj.ro/~levente/download/public/dod/ohdsjtu_occluded_dod.zip) for validation only
 
 <p align="center">
-  <img src="assets/P480_0450_2700_occluded.jpg"> <br>
+  <img src="assets/P480_0450_2700_occluded.jpg" width="400"> <br>
 </p>
 
 [VEDAI dataset](http://rocon.utcluj.ro/~levente/download/public/dod/vedai_dod.zip) for validation only
 
 <p align="center">
-  <img src="assets/00000027_co.png"> <br>
+  <img src="assets/00000027_co.png" width="400"> <br>
 </p>
 
 [vine leaves dataset](http://rocon.utcluj.ro/~levente/download/public/dod/leaves_dod.zip) the contours, and a few sampled leaves from a laboratory environment are also included.
 
 <p align="center">
-  <img src="assets/Cluj_Aug03_DJI_0562_f_00150.jpg"> <br>
+  <img src="assets/Cluj_Aug03_DJI_0562_f_00150.jpg" width="400"> <br>
 </p>
 
 You have to have your dataset prepared for training and evaluation. The dataset structure should look like this:
@@ -88,10 +84,6 @@ DOD model trained on the OHD-SJTU-L dataset: [model](http://rocon.utcluj.ro/~lev
 
 DOD model trained on the Leaf dataset: [model](http://rocon.utcluj.ro/~levente/download/public/dod/leaves_best.pt)
 
-## Training
-
-For training the DOD method, you should run `the script_train_dod.py` script. There you can choose the dataset (path to the config file), the representation, and the direction loss type.
-
 ## Evaluation
 
 For evaluating a model, use the `script_val.py`.
@@ -103,6 +95,10 @@ If you have the inference result from the HDDet method, you can convert those ty
 ## Image rectification
 
 Once you have the necessary dataset for image rectificaiton, you can create rectified images using `rectify_leaves.py` script.
+
+## Training
+
+For training the DOD method, you should run `the script_train_dod.py` script. There you can choose the dataset (path to the config file), the representation, and the direction loss type.
 
 ## Citing
 
@@ -118,3 +114,10 @@ Once you have the necessary dataset for image rectificaiton, you can create rect
       doi       = {10.1109/MIGARS67156.2025.11231783},
     }
 ```
+
+
+### Acknowledgments
+
+<sup>
+This work was partially supported by the grants TKP2021-NVA-09 and K135728 of the National Research, Development and Innovation Fund (NKFIH) of Hungary; the HAS Domus scholarship; the ATLAS project funded by the EU CHIST-ERA program (CHIST-ERA-23-MultiGIS-02) and NKFIH under grant 2024-1.2.2-ERA-NET-2025-00020; the project Romanian Hub for Artificial Intelligence-HRIA, Smart Growth, Digitization and Financial Instruments Program, MySMIS no. 334906. 
+</sup>
