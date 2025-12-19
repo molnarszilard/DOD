@@ -10,8 +10,6 @@ Object detection in remote sensing consists in recognizing and localizing object
   <img src="assets/arch_horz_simplified3_withimage.jpg"> <br>
 </p>
 
-This project was published at [MIGARS2025](https://ieeexplore.ieee.org/document/11231783)
-
 ## Datasets
 
 We provide 3 datasets, formatted to be useable out-of-the-box with the DOD model.
@@ -99,22 +97,6 @@ To annotate the direction of the leaves, you need MATLAB, with the `data_process
 ### Training
 
 For training the DOD method, you should run `the script_train_dod.py` script. There you can choose the dataset (path to the config file), the representation, and the direction loss type.
-
-## Citing
-
-### BibTeX
-
-```bibtex
-@InProceedings{molnar2025migars_DOD_directionalobjectdetection,
-      author    = {Molnar, Szilard and Tamas, Levente and Kato, Zoltan},
-      booktitle = {{2025 International Conference on Machine Intelligence for GeoAnalytics and Remote Sensing (MIGARS)}},
-      title     = {{Directional Object Detection in Aerial Images}},
-      year      = {2025},
-      pages     = {1--4},
-      doi       = {10.1109/MIGARS67156.2025.11231783},
-    }
-```
-
 
 ### Acknowledgments
 
