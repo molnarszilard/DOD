@@ -58,22 +58,6 @@ For each image, there should be a `.txt` file in the respectiv `label` folder (s
 
 Do not forget to have the required `yaml` file for your dataset (e.g., 1ultralytics/cfg/datasets/custom/OHD-SJTU-L.yaml1).
 
-### Dataset preprocessing
-
-The original datasets can be found at: [OHD-SHTU](https://thinklab.sjtu.edu.cn/OHD-SJTU.html) and [VEDAI](https://downloads.greyc.fr/vedai/).
-
-For OHD-SJTU you can use the given script in their Developement tools, to spit the images into smaller images. The VEDAI dataset is slightly differently organized, for that use the `data_processing_scripts/vedai2dobb.py` script.
-
-There are also a few other usefule scripts:
-
-If you want to check that your annotations are correct, you can use the `data_processing_scripts/plot_direction.py` script.
-
-You might want to enlarge the variations on your dataset with flipping your images using thet `data_processing_scripts/flip_images.py` script (this also takes care for the labels).
-
-For the OHD-SJTU datasets, you can introduce occlusions onto the image using the `data_processing_scripts/dpt_occlusion.py` script.
-
-To annotate the direction of the leaves, you need MATLAB, with the `data_processing_scripts/matlab/label_leaf_orientation_many.m` script. For other Leaves dataset related question, please open an issue.
-
 ## Environment setup
 
 We recommend to use a conda environment for this code. Most necessary packages are in the requirements.txt file. Make sure NOT to install ultralytics from pip, as this repository contains direct modifications into that code, and installing it would create a confusing environment.
@@ -96,7 +80,23 @@ If you have the inference result from the HDDet method, you can convert those ty
 
 Once you have the necessary dataset for image rectificaiton, you can create rectified images using `rectify_leaves.py` script.
 
-## Training
+### Dataset preprocessing
+
+The original datasets can be found at: [OHD-SHTU](https://thinklab.sjtu.edu.cn/OHD-SJTU.html) and [VEDAI](https://downloads.greyc.fr/vedai/).
+
+For OHD-SJTU you can use the given script in their Developement tools, to spit the images into smaller images. The VEDAI dataset is slightly differently organized, for that use the `data_processing_scripts/vedai2dobb.py` script.
+
+There are also a few other usefule scripts:
+
+If you want to check that your annotations are correct, you can use the `data_processing_scripts/plot_direction.py` script.
+
+You might want to enlarge the variations on your dataset with flipping your images using thet `data_processing_scripts/flip_images.py` script (this also takes care for the labels).
+
+For the OHD-SJTU datasets, you can introduce occlusions onto the image using the `data_processing_scripts/dpt_occlusion.py` script.
+
+To annotate the direction of the leaves, you need MATLAB, with the `data_processing_scripts/matlab/label_leaf_orientation_many.m` script. For other Leaves dataset related question, please open an issue.
+
+### Training
 
 For training the DOD method, you should run `the script_train_dod.py` script. There you can choose the dataset (path to the config file), the representation, and the direction loss type.
 
