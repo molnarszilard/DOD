@@ -164,7 +164,7 @@ class DODValidator(DetectionValidator):
 
         Args:
             detections (torch.Tensor): Tensor of shape [N, 9] representing detections.
-                Each detection is of the format: x1, y1, x2, y2, conf, class, angle, Dx, Dy, Direction_Vis.
+                Each detection is of the format: x1, y1, x2, y2, conf, class, angle, Dx, Dy.
             gt_bboxes (torch.Tensor): Tensor of shape [M, 5] representing rotated boxes.
                 Each box is of the format: x1, y1, x2, y2, angle.
             gt_cls (torch.Tensor): Tensor of shape [M] representing labels.
@@ -195,7 +195,7 @@ class DODValidator(DetectionValidator):
 
         Args:
             detections (torch.Tensor): Tensor of shape [N, 9] representing detections.
-                Each detection is of the format: x1, y1, x2, y2, conf, class, angle, Dx, Dy, Direction_Vis.
+                Each detection is of the format: x1, y1, x2, y2, conf, class, angle, Dx, Dy.
             gt_bboxes (torch.Tensor): Tensor of shape [M, 5] representing rotated boxes.
                 Each box is of the format: x1, y1, x2, y2, angle.
             gt_cls (torch.Tensor): Tensor of shape [M] representing labels.
